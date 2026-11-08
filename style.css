@@ -1,6 +1,4 @@
 
-/* ===== GLOBAL ===== */
-
 :root {
     --background: #0b1120;
     --surface: #151f32;
@@ -27,7 +25,6 @@ body {
     background: var(--background);
     color: var(--text);
     line-height: 1.7;
-    transition: background 0.3s, color 0.3s;
 }
 
 a {
@@ -36,22 +33,17 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #93c5fd;
 }
 
-button {
-    font: inherit;
-    cursor: pointer;
-}
-
-/* ===== HEADER ===== */
+/* Header */
 
 .header {
     position: sticky;
     top: 0;
     z-index: 100;
     min-height: 75px;
-    padding: 15px 8%;
+    padding: 15px 6%;
     background: var(--surface);
     border-bottom: 1px solid var(--border);
     display: flex;
@@ -71,12 +63,13 @@ button {
 
 .header nav {
     display: flex;
-    gap: 22px;
+    flex-wrap: wrap;
+    gap: 17px;
 }
 
 .header nav a {
     color: var(--text);
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .header nav a:hover {
@@ -90,17 +83,18 @@ button {
     color: var(--text);
     border-radius: 7px;
     padding: 8px 12px;
+    cursor: pointer;
 }
 
 .menu-toggle {
     display: none;
 }
 
-/* ===== HERO ===== */
+/* Hero */
 
 .hero {
-    min-height: 600px;
-    padding: 120px 10%;
+    min-height: 580px;
+    padding: 110px 10%;
     display: flex;
     align-items: center;
     background:
@@ -154,7 +148,7 @@ button {
     padding: 12px 24px;
     border-radius: 7px;
     font-weight: bold;
-    transition: 0.2s;
+    transition: transform 0.2s;
 }
 
 .button:hover {
@@ -163,11 +157,6 @@ button {
 
 .primary {
     background: var(--accent);
-    color: #08111f;
-}
-
-.primary:hover {
-    background: #93c5fd;
     color: #08111f;
 }
 
@@ -184,10 +173,10 @@ button {
     font-size: 14px;
 }
 
-/* ===== SECTIONS ===== */
+/* Sections */
 
 .section {
-    padding: 85px 10%;
+    padding: 80px 10%;
 }
 
 .alternate {
@@ -199,7 +188,7 @@ button {
 }
 
 .section-heading h2 {
-    font-size: 34px;
+    font-size: 32px;
 }
 
 .section-heading h2::after {
@@ -220,7 +209,7 @@ button {
     color: var(--muted);
 }
 
-/* ===== SKILLS ===== */
+/* Skills and cards */
 
 .skills-grid,
 .projects-grid,
@@ -250,8 +239,8 @@ button {
 .skill-card h3,
 .project-card h3,
 .education-card h3 {
-    margin-bottom: 10px;
     color: var(--accent);
+    margin-bottom: 10px;
 }
 
 .skill-card p,
@@ -260,7 +249,7 @@ button {
     color: var(--muted);
 }
 
-/* ===== EXPERIENCE ===== */
+/* Experience */
 
 .timeline {
     border-left: 2px solid var(--accent);
@@ -306,11 +295,11 @@ button {
 
 .tech {
     margin-top: 15px;
-    color: var(--accent);
+    color: var(--accent) !important;
     font-size: 14px;
 }
 
-/* ===== PROJECTS ===== */
+/* Projects */
 
 .project-number {
     color: var(--accent);
@@ -328,6 +317,7 @@ button {
 .project-card > a {
     margin-top: auto;
     padding-top: 20px;
+    font-weight: bold;
 }
 
 .tags {
@@ -345,7 +335,27 @@ button {
     font-size: 12px;
 }
 
-/* ===== CONTACT ===== */
+.project-note,
+.section-note,
+.linkedin-note {
+    font-size: 13px;
+    margin-top: 15px;
+    color: var(--muted);
+}
+
+/* Training status */
+
+.status {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--accent);
+    background: #20324b;
+    font-size: 12px;
+}
+
+/* Contact */
 
 .contact-section {
     text-align: center;
@@ -365,7 +375,7 @@ button {
     color: var(--muted);
 }
 
-/* ===== FOOTER ===== */
+/* Footer */
 
 footer {
     padding: 25px;
@@ -376,7 +386,7 @@ footer {
     font-size: 14px;
 }
 
-/* ===== LIGHT MODE ===== */
+/* Light mode */
 
 body.light-mode {
     --background: #f4f7fb;
@@ -392,16 +402,13 @@ body.light-mode .hero {
     background: #edf3fc;
 }
 
-body.light-mode .tags span {
+body.light-mode .tags span,
+body.light-mode .status {
     background: #dce8f8;
     color: #1e40af;
 }
 
-body.light-mode .primary:hover {
-    color: #08111f;
-}
-
-/* ===== MOBILE RESPONSIVENESS ===== */
+/* Mobile */
 
 @media (max-width: 900px) {
     .header {
@@ -409,7 +416,7 @@ body.light-mode .primary:hover {
     }
 
     .header nav {
-        gap: 12px;
+        gap: 10px;
     }
 
     .header nav a {
@@ -449,8 +456,8 @@ body.light-mode .primary:hover {
     }
 
     .hero {
-        min-height: 500px;
-        padding: 80px 7%;
+        min-height: 480px;
+        padding: 75px 7%;
     }
 
     .section {
@@ -464,6 +471,6 @@ body.light-mode .primary:hover {
     }
 
     .section-heading h2 {
-        font-size: 28px;
+        font-size: 27px;
     }
 }

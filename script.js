@@ -1,6 +1,5 @@
 
-// ===== MOBILE NAVIGATION =====
-
+// Mobile navigation
 const menuButton = document.getElementById("menu-toggle");
 const navigation = document.getElementById("navigation");
 
@@ -11,8 +10,7 @@ menuButton.addEventListener("click", function () {
     menuButton.textContent = isOpen ? "✕" : "☰";
 });
 
-// Close mobile menu after selecting a link
-
+// Close menu after clicking a navigation link
 navigation.querySelectorAll("a").forEach(function (link) {
     link.addEventListener("click", function () {
         navigation.classList.remove("active");
@@ -21,8 +19,7 @@ navigation.querySelectorAll("a").forEach(function (link) {
     });
 });
 
-// ===== DARK / LIGHT MODE =====
-
+// Dark and light mode
 const themeButton = document.getElementById("theme-toggle");
 
 themeButton.addEventListener("click", function () {
@@ -31,6 +28,7 @@ themeButton.addEventListener("click", function () {
     const isLight = document.body.classList.contains("light-mode");
 
     themeButton.textContent = isLight ? "☾" : "☀";
+
     themeButton.setAttribute(
         "aria-label",
         isLight ? "Switch to dark theme" : "Switch to light theme"
