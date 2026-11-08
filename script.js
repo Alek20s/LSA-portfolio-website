@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alexei Kosyhin | Python Developer</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Alexei Kosyhin</h1>
+        <p>Python Developer | AI Engineer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I am a Python developer with a background in physics
+                and software development. I enjoy building applications,
+                working with APIs, databases and artificial intelligence.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Python</li>
+                <li>Django and FastAPI</li>
+                <li>SQL and PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>HTML, CSS and JavaScript</li>
+                <li>Docker and Git</li>
+                <li>Machine Learning and LLM APIs</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <article>
+                <h3>Product Price API</h3>
+                <p>
+                    An application for collecting, storing and searching
+                    product prices using web scraping and APIs.
+                </p>
+                <p>
+                    Technologies: Python, Playwright, PostgreSQL,
+                    MongoDB, Elasticsearch and Docker.
+                </p>
+            </article>
+
+            <article>
+                <h3>Blogicum</h3>
+                <p>
+                    A Django blogging application with posts,
+                    categories and templates.
+                </p>
+                <p>Technologies: Python, Django and HTML.</p>
+            </article>
+
+            <article>
+                <h3>Call-Sense</h3>
+                <p>
+                    An automated calling system designed to collect
+                    customer feedback and analyse responses using AI.
+                </p>
+                <p>
+                    Technologies: Python, FreeSWITCH,
+                    FusionPBX and AI.
+                </p>
+            </article>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p>MSc Physics – University of York</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                GitHub:
+                <a href="https://github.com/Alek20s"
+                   target="_blank" rel="noopener noreferrer">
+                    github.com/Alek20s
+                </a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Alexei Kosyhin</p>
+        <p>Built with HTML, CSS and JavaScript</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

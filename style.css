@@ -1,0 +1,122 @@
+
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f9;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+/* Navigation */
+nav {
+    background-color: #1e3a8a;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dbeafe;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    margin: 15px 0 8px;
+    color: #172554;
+}
+
+/* Skills */
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+}
+
+nav a {
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+
+    section {
+        padding: 20px;
+    }
+}
