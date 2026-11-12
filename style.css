@@ -1,5 +1,4 @@
 
-
 /* =====================================
    PORTFOLIO - MAIN STYLESHEET
 ===================================== */
@@ -102,18 +101,31 @@ a:hover {
     color: var(--accent);
 }
 
-.menu-toggle,
-.theme-toggle {
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
     background: var(--surface);
     color: var(--text);
     border: 1px solid var(--border);
     border-radius: 8px;
     padding: 8px 12px;
     cursor: pointer;
+    font-size: 18px;
+    display: none;
 }
 
-.menu-toggle {
-    display: none;
+/* DARK / LIGHT THEME BUTTON */
+
+.theme-toggle {
+    background: var(--surface);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 36px;
+    cursor: pointer;
+    font-size: 54px;
+    line-height: 1;
+    transition: background 0.3s, color 0.3s;
 }
 
 /* HERO SECTION */

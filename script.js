@@ -23,9 +23,7 @@ navigation.querySelectorAll("a").forEach(function (link) {
 const themeButton = document.getElementById("theme-toggle");
 
 themeButton.addEventListener("click", function () {
-    document.body.classList.toggle("light-mode");
-
-    const isLight = document.body.classList.contains("light-mode");
+    const isLight = document.body.classList.toggle("light-mode");
 
     themeButton.textContent = isLight ? "☾" : "☀";
 
